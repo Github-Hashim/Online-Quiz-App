@@ -1,0 +1,140 @@
+/*
+    Description: Online Quiz App
+    Author: Muhammad Hashim
+    Date: December 30, 2024
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(59, 223, 59), whitesmoke, rgb(59, 223, 59));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-container {
+    width: 50%;
+    height: 70%;
+    background-image: radial-gradient(circle, #7a3a8dd1, #e84233e5);
+    border-radius: 10px;
+    box-shadow: 4px 6px 4px #2ab3d8, -4px 6px 4px #2ab3d8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+#feedback-content {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#quiz-question {
+    background-color: rgb(7, 151, 164);
+    border-bottom: 5px solid rgb(9, 83, 114);
+    height: 35%;
+}
+
+#question-text {
+    font-size: 10vw;
+    margin-bottom: 10px;
+}
+
+#quiz-description {
+    background-color: whitesmoke;
+    border-bottom: 5px solid rgb(158, 6, 160);
+    padding: 10px 10px;
+}
+
+#description-text {
+    font-size: large;
+}
+
+.options-container {
+    justify-content: space-between;
+    height: 20%;
+}
+
+.answer-option {
+    background-color: whitesmoke;
+    width: 20%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    border-bottom: 3px solid rgb(120, 118, 118);
+    padding: 30px 5px;
+    font-size: larger;
+}
+
+.answer-option:hover {
+    background-color: rgb(210, 110, 210);
+    cursor: pointer;
+}
+
+#start-quiz-btn {
+    width: 10vw;
+    height: 5vh;
+    background-color: rgb(85, 198, 85);
+    border-radius: 8px;
+    border: none;
+    font-size: larger;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-quiz-btn:hover {
+    background-color: rgb(74, 110, 218);
+    cursor: pointer;
+}
+
+#quiz-marks {
+    position: absolute;
+    background-color: lightgreen;
+    top: 10px;
+    right: 10px;
+    padding: 8px 8px;
+    border-bottom: 3px solid gray;
+}
+
+#quiz-timer {
+    position: absolute;
+    background-color: rgb(238, 240, 131);
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 8px;
+    visibility: hidden;
+}
+
+#quiz-score {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 50px;
+    background-image: radial-gradient(circle, rgb(91, 196, 91), rgb(71, 178, 235));
+    width: 80%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 50px;
+    text-align: center;
+}

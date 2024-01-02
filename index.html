@@ -1,0 +1,68 @@
+<!--
+    Description: Online Quiz App
+    Author: Muhammad Hashim
+    Date: December 30, 2024
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Title of the webpage -->
+    <title>Online Quiz App</title>
+</head>
+
+<body>
+    <!-- Main container for the quiz -->
+    <div class="quiz-container">
+
+        <!-- Container for feedback messages -->
+        <div class="feedback-container">
+            <p id="feedback-content"></p>
+        </div>
+
+        <!-- Display of user's marks -->
+        <div id="quiz-marks">Marks: </div>
+
+        <!-- Container for displaying quiz question -->
+        <div id="quiz-question" class="center">
+            <p id="question-text"></p>
+        </div>
+
+        <!-- Container for displaying quiz description -->
+        <div id="quiz-description" class="center">
+            <p id="description-text">Click the correct answer from the choices below</p>
+        </div>
+
+        <!-- Container for answer options -->
+        <div class="options-container center">
+            <button class="answer-option" onclick="checkUserAnswer(this)"></button>
+            <button class="answer-option" onclick="checkUserAnswer(this)"></button>
+            <button class="answer-option" onclick="checkUserAnswer(this)"></button>
+            <button class="answer-option" onclick="checkUserAnswer(this)"></button>
+        </div>
+
+        <!-- Container for starting the quiz -->
+        <div class="center">
+            <div id="start-quiz-btn" onclick="startQuiz()">Start Quiz</div>
+        </div>
+
+        <!-- Display of remaining quiz time -->
+        <div id="quiz-timer">Time Remaining: </div>
+
+        <!-- Container for displaying quiz score -->
+        <div id="quiz-score"></div>
+    </div>
+
+    <!-- Script tag linking to external JavaScript file -->
+    <script src="/script.js"></script>
+</body>
+
+</html>
